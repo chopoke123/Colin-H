@@ -90,7 +90,46 @@ int main()
 		}
 		else if (choice == 3)
 		{
+				cout << "MEAT MENU" << endl;
+				cout << "1. Pepperoni" << endl;
+				cout << "2. Sausage" << endl;
+				cout << "3. Ham" << endl;
+				cout << "4. Chicken" << endl;
+				cout << "5. Bacon" << endl;
+				cout << "________________________________________________" << endl;
+				cout << "What meat would you like to add to your pizza: " << endl;
+				cin >> choice;
 
+				if (choice == 1)
+				{
+					MEATS = "Pepperoni";
+					MEAT_PRICE = 1.25;
+					cout << endl;
+				}
+				else if (choice == 2)
+				{
+					MEATS = "Sausage";
+					MEAT_PRICE = 1.25;
+					cout << endl;
+				}
+				else if (choice == 3)
+				{
+					MEATS = "Ham";
+					MEAT_PRICE = 1.25;
+					cout << endl;
+				}
+				else if (choice == 4)
+				{
+					MEATS = "Chicken";
+					MEAT_PRICE = 1.25;
+					cout << endl;
+				}
+				else if (choice -= 5)
+				{
+					MEATS = "Bacon";
+					MEAT_PRICE = 1.25;
+					cout << endl;
+				}
 		}
 		else if (choice == 4)
 		{
