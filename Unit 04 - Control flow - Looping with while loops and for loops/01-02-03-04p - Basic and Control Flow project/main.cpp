@@ -17,7 +17,7 @@ int main()
 	string MEATS = "";
 	string VEGGIES = "";
 	string CHESSE = "";
-	//PIZZA_PRICE = SAUCE_PRICE + CHEESE_PRICE + MEAT_PRICE + VEGGIE_PRICE +8;
+	
 
 	while (!CHECK_OUT)
 	{
@@ -84,12 +84,12 @@ int main()
 				if (choice == 1)
 				{
 					CHEESE_PRICE = .73;
-					CHESSE = "Chese";
+					CHESSE = "Chesse";
 				}
 				else if (choice == 2 )
 				{
 					CHEESE_PRICE = 0;
-					CHESSE = "no cheese";
+					CHESSE = "No cheese";
 				}
 		}
 		else if (choice == 3)
@@ -174,11 +174,28 @@ int main()
 		}
 		else if (choice == 5)
 		{
+			float PIZZA_PRICE = 8;
+			float SAUCE_PRICE = 0;
+			float CHEESE_PRICE = 0;
+			float MEAT_PRICE = 0;
+			float VEGGIE_PRICE = 0;
 
+			string SAUCE = "";
+			string MEATS = "";
+			string VEGGIES = "";
+			string CHESSE = "";
 		}
 		else if (choice == 6)
 		{
+			cout << "CHECKOUT" << endl;
+			cout << "Pizza: " << SAUCE << ", " << CHESSE << ", " << MEATS << ", and " << VEGGIES << endl;
+			cout << "CHECKOUT" << endl;
+			
+			PIZZA_PRICE = SAUCE_PRICE + CHEESE_PRICE + MEAT_PRICE + VEGGIE_PRICE + 8;
 
+			cout << "Price: " << PIZZA_PRICE << endl;
+
+			cout << "THANK YOU FOR ORDERING FROM COLIN'S PIZZERIA";
 		}
 	}
 	
