@@ -6,14 +6,15 @@ int main()
 {	
 	bool CHECK_OUT = false;
 	float PIZZA_PRICE = 8;
-	float PIZZA_SAUCE;
-	float PIZZA_CHEESE;
-	float PIZZA_MEATS;
-	float PIZZA_VEGGIES;
+	float SAUCE_PRICE;
+	float CHEESE_PRICE;
+	float MEAT_PRICE;
+	float VEGGIE_PRICE;
 	int choice;
 	string SAUCE;
 	string MEATS;
 	string VEGGIES;
+	string CHESSE;
 
 	while (!CHECK_OUT)
 	{
@@ -47,30 +48,45 @@ int main()
 				if (choice == 1)
 				{
 					SAUCE = "Tomato";
-					PIZZA_SAUCE = .53;
+					SAUCE_PRICE = .53;
 					cout << endl;
 				}
 				else if (choice == 2)
 				{
 					SAUCE = "Alfredo";
+					SAUCE_PRICE = .53;
 					cout << endl;
 				}
 				else if (choice == 3)
 				{
 					SAUCE = "Barbecue";
-					PIZZA_SAUCE = .53;
+					SAUCE_PRICE = .53;
 					cout << endl;
 				}
 				else if (choice == 4)
 				{
 					SAUCE = "Buffalo";
-					PIZZA_SAUCE = .53;
+					SAUCE_PRICE = .53;
 					cout << endl;
 				}
 			}
 		else if (choice == 2)
 		{
+				cout << "Would you like cheese on your pizza?";
+				cout << "1. Yes";
+				cout << "2. No";
+				cin >> choice;
 
+				if (choice == 1)
+				{
+					CHEESE_PRICE = .73;
+					CHESSE = "Chese";
+				}
+				else if (choice == 2 )
+				{
+					CHEESE_PRICE = 0;
+					CHESSE = "no cheese";
+				}
 		}
 		else if (choice == 3)
 		{
