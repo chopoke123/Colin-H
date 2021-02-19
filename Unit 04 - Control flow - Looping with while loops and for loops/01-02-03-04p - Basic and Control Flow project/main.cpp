@@ -44,7 +44,7 @@ int main()
 				cout << "3. Barbecue" << endl;
 				cout << "4. Buffalo" << endl;
 				cout << "________________________________________________" << endl;
-				cout << "What sauce would you like to add to your pizza: " << endl;
+				cout << "What sauce would you like to add to your pizza: ";
 				cin >> choice;
 
 
@@ -78,6 +78,7 @@ int main()
 				cout << "Would you like cheese on your pizza?" << endl;
 				cout << "1. Yes" << endl;
 				cout << "2. No" << endl;
+				cout << "_______" << endl;
 				cin >> choice;
 				cout << endl;
 
@@ -101,7 +102,7 @@ int main()
 				cout << "4. Chicken" << endl;
 				cout << "5. Bacon" << endl;
 				cout << "________________________________________________" << endl;
-				cout << "What meat would you like to add to your pizza: " << endl;
+				cout << "What meat would you like to add to your pizza: ";
 				cin >> choice;
 
 				if (choice == 1)
@@ -143,7 +144,7 @@ int main()
 				cout << "3. Pineapple" << endl;
 				cout << "4. Tomatoes" << endl;
 				cout << "________________________________________________" << endl;
-				cout << "What veggies would you like to add to your pizza: " << endl;
+				cout << "What veggies would you like to add to your pizza: ";
 				cin >> choice;
 
 
@@ -174,28 +175,40 @@ int main()
 		}
 		else if (choice == 5)
 		{
-			float PIZZA_PRICE = 8;
-			float SAUCE_PRICE = 0;
-			float CHEESE_PRICE = 0;
-			float MEAT_PRICE = 0;
-			float VEGGIE_PRICE = 0;
+			cout << "Are you sure you want to reset your pizza: " << endl;
+			cout << "1. Yes" << endl;
+			cout << "2. No" << endl;
+			cin >> choice;
+			
+			if (choice == 1)
+			{
+				PIZZA_PRICE = 8;
+				SAUCE_PRICE = 0;
+				CHEESE_PRICE = 0;
+				MEAT_PRICE = 0;
+				VEGGIE_PRICE = 0;
 
-			string SAUCE = "";
-			string MEATS = "";
-			string VEGGIES = "";
-			string CHESSE = "";
+				SAUCE = "";
+				MEATS = "";
+				VEGGIES = "";
+				CHESSE = "";
+			}
 		}
 		else if (choice == 6)
 		{
+			cout << "__________________________________________________________________" << endl;
 			cout << "CHECKOUT" << endl;
 			cout << "Pizza: " << SAUCE << ", " << CHESSE << ", " << MEATS << ", and " << VEGGIES << endl;
 			cout << "CHECKOUT" << endl;
 			
 			PIZZA_PRICE = SAUCE_PRICE + CHEESE_PRICE + MEAT_PRICE + VEGGIE_PRICE + 8;
 
-			cout << "Price: " << PIZZA_PRICE << endl;
+			cout << "Price: $" << PIZZA_PRICE << endl;
 
-			cout << "THANK YOU FOR ORDERING FROM COLIN'S PIZZERIA";
+			cout << "THANK YOU FOR ORDERING FROM COLIN'S PIZZERIA" << endl;
+			cout << "__________________________________________________________________" << endl;
+
+			CHECK_OUT = true;
 		}
 	}
 	
