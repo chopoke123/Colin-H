@@ -5,16 +5,19 @@ using namespace std;
 int main()
 {	
 	bool CHECK_OUT = false;
-	float PIZZA_PRICE = 8;
-	float SAUCE_PRICE;
-	float CHEESE_PRICE;
-	float MEAT_PRICE;
-	float VEGGIE_PRICE;
 	int choice;
-	string SAUCE;
-	string MEATS;
-	string VEGGIES;
-	string CHESSE;
+
+	float PIZZA_PRICE = 8;
+	float SAUCE_PRICE = 0;
+	float CHEESE_PRICE = 0;
+	float MEAT_PRICE = 0;
+	float VEGGIE_PRICE = 0;
+	
+	string SAUCE = "";
+	string MEATS = "";
+	string VEGGIES = "";
+	string CHESSE = "";
+	//PIZZA_PRICE = SAUCE_PRICE + CHEESE_PRICE + MEAT_PRICE + VEGGIE_PRICE +8;
 
 	while (!CHECK_OUT)
 	{
@@ -35,7 +38,7 @@ int main()
 
 			if (choice == 1)
 			{
-				cout << "SAUCES MENU" << endl;
+				cout << "SAUCE MENU" << endl;
 				cout << "1. Tomato" << endl;
 				cout << "2. Alfredo" << endl;
 				cout << "3. Barbecue" << endl;
@@ -72,10 +75,11 @@ int main()
 			}
 		else if (choice == 2)
 		{
-				cout << "Would you like cheese on your pizza?";
-				cout << "1. Yes";
-				cout << "2. No";
+				cout << "Would you like cheese on your pizza?" << endl;
+				cout << "1. Yes" << endl;
+				cout << "2. No" << endl;
 				cin >> choice;
+				cout << endl;
 
 				if (choice == 1)
 				{
@@ -133,7 +137,40 @@ int main()
 		}
 		else if (choice == 4)
 		{
+				cout << "VEGGIE MENU" << endl;
+				cout << "1. Mushrooms" << endl;
+				cout << "2. Black Olives" << endl;
+				cout << "3. Pineapple" << endl;
+				cout << "4. Tomatoes" << endl;
+				cout << "________________________________________________" << endl;
+				cout << "What veggies would you like to add to your pizza: " << endl;
+				cin >> choice;
 
+
+				if (choice == 1)
+				{
+					VEGGIES = "Mushrooms";
+					VEGGIE_PRICE = .83;
+					cout << endl;
+				}
+				else if (choice == 2)
+				{
+					VEGGIES = "Black Olives";
+					VEGGIE_PRICE = .83;
+					cout << endl;
+				}
+				else if (choice == 3)
+				{
+					VEGGIES = "Pineapple";
+					VEGGIE_PRICE = .83;
+					cout << endl;
+				}
+				else if (choice == 4)
+				{
+					VEGGIES = "Tomatoes";
+					VEGGIE_PRICE = .83;
+					cout << endl;
+				}
 		}
 		else if (choice == 5)
 		{
